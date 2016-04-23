@@ -14,6 +14,8 @@ import java.io.IOException;
 /*
  * 实现文件及目录的复制。
  * 可以实现简单txt文档复制；
+ * 
+ * 
  */
 public class CopyFile {
 	
