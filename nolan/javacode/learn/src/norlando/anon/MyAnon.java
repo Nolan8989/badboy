@@ -12,5 +12,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)//注解的作用域,默认是class,需要改成runtime,否则无法加载到虚拟机
 @Target({ElementType.FIELD,ElementType.METHOD})
 public @interface MyAnon {
+	
 	String value() default("xiaogao");
 }
