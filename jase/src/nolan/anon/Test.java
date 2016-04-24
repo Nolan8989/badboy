@@ -1,4 +1,4 @@
-package norlando.anon;
+package nolan.anon;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -19,7 +19,7 @@ public class Test {
 		Field field = c.getDeclaredField("name");
 		Object obj = c.newInstance();
 		
-		//µÃµ½ÊôÐÔµÄ×¢½â¶ÔÏó
+		//ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ôµï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½
 		MyAnon myanon = field.getAnnotation(MyAnon.class);
 		
 		
@@ -30,7 +30,7 @@ public class Test {
 			Method m =c.getDeclaredMethod("say");
 			m.invoke(obj);
 		}else {
-			System.out.println("Ã»ÓÐÈ¨ÏÞ!");
+			System.out.println("Ã»ï¿½ï¿½È¨ï¿½ï¿½!");
 		}
 		
 		
