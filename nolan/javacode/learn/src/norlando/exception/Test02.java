@@ -1,15 +1,15 @@
-package norlando.exception;
+package com.bjsxt.test.exception;
 
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
- * 测试异常
- * @author Administrator
+ * 测试CheckedException
  *
  */
-public class TestExcepiton {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class Test02 {
+	public static void main(String[] args)  {
 		FileReader fr = null;
 		try{
 			fr = new FileReader("d:/a.txt");
@@ -19,10 +19,7 @@ public class TestExcepiton {
 			while( (temp=fr.read())!=-1){
 //				System.out.println((char)temp);
 				sb.append((char)temp);
-				//dddd
-				
 			}
-			 
 			
 			System.out.println(sb);
 			
@@ -41,26 +38,9 @@ public class TestExcepiton {
 				e.printStackTrace();
 			}
 		}
-	}
-	
-
-}
-
-class MyException01 extends RuntimeException{//这种异常使用的时候不用逮，交给jre即可。
-	public MyException01(){
-	}
-	
-	public MyException01(String e){
-		super(e);
+		
+		
+		//System.out.println("##############");
+		
 	}
 }
-
-class MyException02 extends Exception{//这种异常使用的时候需要逮，否则编译器会报错！！！
-	public MyException02(){
-	}
-	
-	public MyException02(String e){
-		super(e);
-	}
-}
-
