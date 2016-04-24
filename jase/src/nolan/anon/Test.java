@@ -19,7 +19,6 @@ public class Test {
 		Field field = c.getDeclaredField("name");
 		Object obj = c.newInstance();
 		
-		//�õ����Ե�ע�����
 		MyAnon myanon = field.getAnnotation(MyAnon.class);
 		
 		
@@ -30,7 +29,7 @@ public class Test {
 			Method m =c.getDeclaredMethod("say");
 			m.invoke(obj);
 		}else {
-			System.out.println("û��Ȩ��!");
+			System.out.println("111");
 		}
 		
 		
