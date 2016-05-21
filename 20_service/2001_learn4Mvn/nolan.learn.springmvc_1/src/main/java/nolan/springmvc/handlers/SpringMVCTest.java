@@ -9,6 +9,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import nolan.springmvc.entities.User;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -20,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
-@SessionAttributes(value={"user"}, types={String.class})
+//@SessionAttributes(value={"user"}, types={String.class})
 @RequestMapping("/springmvc")
 @Controller
 public class SpringMVCTest {
@@ -51,18 +53,18 @@ public class SpringMVCTest {
 	 * 1). SpringMVC 会使用 value 属性值在 implicitModel 中查找对应的对象, 若存在则会直接传入到目标方法的入参中.
 	 * 2). SpringMVC 会一 value 为 key, POJO 类型的对象为 value, 存入到 request 中. 
 	 */
-//	@ModelAttribute
-//	public void getUser(@RequestParam(value="id",required=false) Integer id, 
-//			Map<String, Object> map){
-//		System.out.println("modelAttribute method");
-//		if(id != null){
-//			//模拟从数据库中获取对象
-//			User user = new User(1, "Tom", "123456", "tom@atguigu.com", 12);
-//			System.out.println("从数据库中获取一个对象: " + user);
-//			
-//			map.put("user", user);
-//		}
-//	}
+	@ModelAttribute
+	public void getUser(@RequestParam(value="id",required=false) Integer id, 
+			Map<String, Object> map){
+		System.out.println("modelAttribute method");
+		if(id != null){
+			//模拟从数据库中获取对象
+			User user = new User(1, "Tom", "123456", "tom@atguigu.com", 17 );
+			System.out.println("从数据库中获取一个对象: " + user);
+			
+			map.put("user", user);
+		}
+	}
 	
 	/**
 	 * 运行流程:
@@ -105,25 +107,25 @@ public class SpringMVCTest {
 	 * 近而传到 request 域对象中. 
 	 * 4). 把 WebDataBinder 的 target 作为参数传递给目标方法的入参. 
 	 */
-//	@RequestMapping("/testModelAttribute")
-//	public String testModelAttribute(User user){
-//		System.out.println("修改: " + user);
-//		return SUCCESS;
-//	}
-//	
+	@RequestMapping("/testModelAttribute")
+	public String testModelAttribute(User user){
+		System.out.println("修改: " + user);
+		return SUCCESS;
+	}
+	
 	/**
 	 * @SessionAttributes 除了可以通过属性名指定需要放到会话中的属性外(实际上使用的是 value 属性值),
 	 * 还可以通过模型属性的对象类型指定哪些模型属性需要放到会话中(实际上使用的是 types 属性值)
 	 * 
 	 * 注意: 该注解只能放在类的上面. 而不能修饰放方法. 
 	 */
-//	@RequestMapping("/testSessionAttributes")
-//	public String testSessionAttributes(Map<String, Object> map){
-//		User user = new User("Tom", "123456", "tom@atguigu.com", 15);
-//		map.put("user", user);
-//		map.put("school", "atguigu");
-//		return SUCCESS;
-//	}
+	@RequestMapping("/testSessionAttributes")
+	public String testSessionAttributes(Map<String, Object> map){
+		User user = new User("Tom", "123456", "tom@atguigu.com", 15);
+		map.put("user", user);
+		map.put("school", "atguigu");
+		return SUCCESS;
+	}
 	
 	/**
 	 * 目标方法可以添加 Map 类型(实际上也可以是 Model 类型或 ModelMap 类型)的参数. 
@@ -179,11 +181,11 @@ public class SpringMVCTest {
 	 * Spring MVC 会按请求参数名和 POJO 属性名进行自动匹配， 自动为该对象填充属性值。支持级联属性。
 	 * 如：dept.deptId、dept.address.tel 等
 	 */
-//	@RequestMapping("/testPojo")
-//	public String testPojo(User user) {
-//		System.out.println("testPojo: " + user);
-//		return SUCCESS;
-//	}
+	@RequestMapping("/testPojo")
+	public String testPojo(User user) {
+		System.out.println("testPojo: " + user);
+		return SUCCESS;
+	}
 
 	/**
 	 * 了解:
