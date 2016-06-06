@@ -1,14 +1,14 @@
-package norlando.util.·ºĞÍ;
+package norlando.util.fanxing;
 /**
- * ·ºĞÍÀà: <> ,±àÒëÆÚĞĞÎª
- * ×ÖÄ¸:ÈÎÒâ±àĞ´£¬³£¼ûµÄ×ÖÄ¸
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: <> ,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª
+ * ï¿½ï¿½Ä¸:ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸
  * T:type
  * K:key
  * V:value
  * E:element
  * 
- * 1¡¢Ê¡ĞÄ:²»ÓÃÀàĞÍ×ª»»
- * 2¡¢°²È«:²»ÓÃÀàĞÍ°²È«
+ * 1ï¿½ï¿½Ê¡ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
+ * 2ï¿½ï¿½ï¿½ï¿½È«:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½È«
  * 
  * 
  * @author Administrator
@@ -19,7 +19,7 @@ package norlando.util.·ºĞÍ;
 public class Student2<T1, T2> {
 	private T1 javaScore;
 	private T2 oracleScore;
-	//²»ÄÜÊ¹ÓÃÔÚ¾²Ì¬ÊôĞÔÉÏ
+	//ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ú¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	//private static T1 htmlScore;
 	public Student2() {
 	}
@@ -44,21 +44,21 @@ public class Student2<T1, T2> {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//´´½¨¶ÔÏó Ê¹ÓÃµÄÊ±ºòÈ·¶¨ÀàĞÍ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ê¹ï¿½Ãµï¿½Ê±ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Student2<String,Integer> stu =new Student2<String,Integer>();
-		//ÉèÖÃÖµ
-		stu.setJavaScore("ÓÅĞã");
+		//ï¿½ï¿½ï¿½ï¿½Öµ
+		stu.setJavaScore("ï¿½ï¿½ï¿½ï¿½");
 		stu.setOracleScore(80);
 		
-		//»ñÈ¡ ×Ô¶¯ÀàĞÍ¼ì²é
+		//ï¿½ï¿½È¡ ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
 		//Integer score1 =stu.getJavaScore();
-		//»ñÈ¡ ×Ô¶¯Ç¿ÖÆ×ª»»
+		//ï¿½ï¿½È¡ ï¿½Ô¶ï¿½Ç¿ï¿½ï¿½×ªï¿½ï¿½
 		String score2 =stu.getJavaScore();
 		
-		//²»ÄÜÊ¹ÓÃ»ù±¾ÀàĞÍ
+		//ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		//Student2<int,Integer> stu2;
 		
-		//·ºĞÍÀàÃ»ÓĞÖ¸¶¨ÀàĞÍ£¬Í¬Ò»Ê¹ÓÃObject´¦Àí £¬·ºĞÍµÄ²Á³ı
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½Í¬Ò»Ê¹ï¿½ï¿½Objectï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ÍµÄ²ï¿½ï¿½ï¿½
 		Student2 stu2 =new Student2();
 		stu2.setJavaScore("javase");
 	}

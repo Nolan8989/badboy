@@ -1,4 +1,4 @@
-package temp.text;
+package test;
 import java.io.*;
 /**
  * 读取路径，判断若为目录，则输出该目录下所有子文件和目录名称。若为文件则直接输出

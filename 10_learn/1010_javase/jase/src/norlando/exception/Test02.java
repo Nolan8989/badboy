@@ -1,11 +1,11 @@
-package com.bjsxt.test.exception;
+package norlando.exception;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * ²âÊÔCheckedException
+ * ï¿½ï¿½ï¿½ï¿½CheckedException
  *
  */
 public class Test02 {
@@ -23,16 +23,16 @@ public class Test02 {
 			
 			System.out.println(sb);
 			
-		}catch (FileNotFoundException e) {  //Èç¹û¶à¸öÒì³£Ö®¼äÓÐ¸¸×Ó¹ØÏµ£¬ÏÈ·Å×ÓÀàºó·Å¸¸Àà£¡
+		}catch (FileNotFoundException e) {  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£Ö®ï¿½ï¿½ï¿½Ð¸ï¿½ï¿½Ó¹ï¿½Ïµï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ï¿½à£¡
 			e.printStackTrace();
 		}catch(IOException e){
 			e.printStackTrace();
 		}finally{
-			//finallyÖÐµÄ´úÂë£¬ÎÞÂÛÓÐÃ»ÓÐÒì³££¬¶¼»áÖ´ÐÐ£¡
-			System.out.println("ÎÒÔÚfinallyÀïÃæ£¡£¡£¡");
+			//finallyï¿½ÐµÄ´ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð£ï¿½
+			System.out.println("ï¿½ï¿½ï¿½ï¿½finallyï¿½ï¿½ï¿½æ£¡ï¿½ï¿½ï¿½ï¿½");
 			try {
 				if(fr!=null){
-					fr.close();   //IOÁ÷¶ÔÏóÊ¹ÓÃÍêºó£¬ÎÞÂÛÓÐÎÞÒì³££¬¶¼ÐèÒª¹Ø±Õ£¡
+					fr.close();   //IOï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ø±Õ£ï¿½
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

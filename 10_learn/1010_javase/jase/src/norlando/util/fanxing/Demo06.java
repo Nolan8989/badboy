@@ -1,10 +1,10 @@
-package norlando.util.泛型;
+package norlando.util.fanxing;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * jdb7 对泛型的改进
+ * jdb7 锟皆凤拷锟酵的改斤拷
  * @author Administrator
  *
  */
@@ -15,7 +15,7 @@ public class Demo06 {
 	 */
 	public static void main(String[] args) {
 		List<String> list1 =new ArrayList<String>();
-		//jdk7改进
+		//jdk7锟侥斤拷
 		List<String> list2 =new ArrayList<>();
 	}
 

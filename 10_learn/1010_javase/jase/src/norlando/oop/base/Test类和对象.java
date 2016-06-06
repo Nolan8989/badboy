@@ -2,24 +2,24 @@ package norlando.oop.base;
 
 
 
-public class TestÀàºÍ¶ÔÏó {
+public class Testç±»å’Œå¯¹è±¡ {
 	public static void main(String[] args) {
-		//ÀàÊÇ¶ÔÏóµÄÄ£°å¡£ËùÒÔ£¬Ä³¸öÀàÏÂÃæµÄ¶ÔÏó¶¼¾ß±¸ÏàÍ¬µÄ½á¹¹£¡
+		//ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½Ä£ï¿½å¡£ï¿½ï¿½ï¿½Ô£ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ó¶¼¾ß±ï¿½ï¿½ï¿½Í¬ï¿½Ä½á¹¹ï¿½ï¿½
 		int i = 100;
 		/*
-		 * ÀàÏàµ±ÓÚ¿ª·¢ÉÌµÄÍ¼Ö½¡£ÎÒÃÇµÄ·¿×Ó¾ÍÊÇ¸ù¾ÝÀàÕâ¸öÍ¼Ö½Éú³ÉµÄ¡£
-		 * new Student()£¬»á¸ù¾ÝÀàÕâ¸öÍ¼Ö½½¨ºÃÒ»¸ö¶ÔÏó¡£Õâ¸ö¶ÔÏó¾ß±¸ÁËÀàÀïÃæËù¹æ¶¨µÄ½á¹¹¡£¶øÇÒ£¬ËùÓÐÊôÐÔ±»¸³ÓèÄ¬ÈÏÖµ¡£
-		 * Ä¬ÈÏ¸³Öµ¹æÔòÊÇ£ºÊý×ÖÄ¬ÈÏÊÇ0£¬²¼¶ûÖµÄ¬ÈÏÊÇfalse£¬ÒýÓÃÀàÐÍÄ¬ÈÏÊÇnull¡£charÀàÐÍÄ¬ÈÏÊÇ£º\u0000
+		 * ï¿½ï¿½ï¿½àµ±ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½Ìµï¿½Í¼Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ÇµÄ·ï¿½ï¿½Ó¾ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Ö½ï¿½ï¿½ï¿½ÉµÄ¡ï¿½
+		 * new Student()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Ö½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ¶¨ï¿½Ä½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½Ò£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Öµï¿½ï¿½
+		 * Ä¬ï¿½Ï¸ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÄ¬ï¿½ï¿½ï¿½ï¿½falseï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½nullï¿½ï¿½charï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½Ç£ï¿½\u0000
 		 * 
-		 * ÎÒÃÇ¿ÉÒÔ¸ù¾Ý×Ô¼ºµÄÐèÇó¶Ô¶ÔÏóµÄÊôÐÔ×ö²»Í¬µÄ¸³Öµ´¦Àí¡£¾ÍÏñ·¿×ÓµÄ¾ßÌå×°ÐÞÒ»Ñù¡£
+		 * ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä¸ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÓµÄ¾ï¿½ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
 		 */
-		Student s1 = new Student();  //Í¨¹ýnewÀ´µ÷ÓÃ¹¹Ôì·½·¨
+		Student s1 = new Student();  //Í¨ï¿½ï¿½newï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ì·½ï¿½ï¿½
 		System.out.println(s1.id);
 		System.out.println(s1.name);
 		
 		s1.id=1001;
-		s1.name="ÕÅÈý";
-		s1.gender="ÄÐµÄ";
+		s1.name="ï¿½ï¿½ï¿½ï¿½";
+		s1.gender="ï¿½Ðµï¿½";
 		s1.score01=60;
 		s1.score02=80;
 		s1.score03=90;
@@ -28,8 +28,8 @@ public class TestÀàºÍ¶ÔÏó {
 		
 		Student s2 = new Student();
 		s2.id=1002;
-		s2.name="ÀîËÄ";
-		s2.gender="Å®µÄ";
+		s2.name="ï¿½ï¿½ï¿½ï¿½";
+		s2.gender="Å®ï¿½ï¿½";
 		s2.score01=65;
 		s2.score02=85;
 		s2.score03=95;
@@ -40,9 +40,9 @@ public class TestÀàºÍ¶ÔÏó {
 }
 
 /**
- * ¿ÎÌÃ×÷Òµ£º
- * 1. ¶¨ÒåÒ»¸öÑ§ÉúÀà¡£Ä£·ÂÀÏÊ¦´úÂë¡£
- * 2. ¶¨ÒåÒ»¸öÀÏÊ¦Àà¡£ÊôÐÔºÍÐÐÎª×Ô¼ºÌí¼Ó¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½
+ * 1. ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½à¡£Ä£ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ë¡£
+ * 2. ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½à¡£ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½Îªï¿½Ô¼ï¿½ï¿½ï¿½Ó¡ï¿½
  * 
  */
 

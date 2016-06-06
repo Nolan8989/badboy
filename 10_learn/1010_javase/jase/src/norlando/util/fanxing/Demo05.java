@@ -1,4 +1,4 @@
-package norlando.util.·ºÐÍ;
+package norlando.util.fanxing;
 
 import java.util.List;
 
@@ -8,9 +8,9 @@ public class Demo05 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//ÉùÃ÷
+		//ï¿½ï¿½ï¿½ï¿½
 		List<String>[] arr ;
-		//Ã»ÓÐ·ºÐÍÊý×é
+		//Ã»ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		//arr =new ArrayList<String>[9];
 		MyArrayList<String> list =new MyArrayList<String>();
 		list.add("a");

@@ -1,17 +1,17 @@
-package temp.text;
+package test;
 import javax.swing.JOptionPane;
 public class Ex5_6
 {
 	public static void main(String[] args)
   {
   	//int i=0,flag=0;
-	  String s=JOptionPane.showInputDialog(null,"ÊäÈëÒ»¸ö×Ö·û´®£º","Àý5.6ÊäÈë",JOptionPane.QUESTION_MESSAGE);
+	  String s=JOptionPane.showInputDialog(null,"ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½5.6ï¿½ï¿½ï¿½ï¿½",JOptionPane.QUESTION_MESSAGE);
 	  String output=" ";
 	  if(comp(s))
-	  output+=s+"ÊÇ»ØÎÄ";
+	  output+=s+"ï¿½Ç»ï¿½ï¿½ï¿½";
 	  else
-	  output+=s+"²»ÊÇ»ØÎÄ";
-	  JOptionPane.showMessageDialog(null,output,"Àý5.6Êä³ö",JOptionPane.INFORMATION_MESSAGE);
+	  output+=s+"ï¿½ï¿½ï¿½Ç»ï¿½ï¿½ï¿½";
+	  JOptionPane.showMessageDialog(null,output,"ï¿½ï¿½5.6ï¿½ï¿½ï¿½",JOptionPane.INFORMATION_MESSAGE);
     System.exit(0);
   }
   public static boolean comp(String s)

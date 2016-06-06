@@ -1,4 +1,4 @@
-package temp.text;
+package test;
 
 public class Instance {
 
@@ -11,14 +11,14 @@ public class Instance {
 
 }
 
-class Singleton{ //¶öººÊ½
+class Singleton{ //ï¿½ï¿½ï¿½ï¿½Ê½
 	private static Singleton instance = new Singleton();
 	private Singleton(){}
 	public static Singleton getInstance(){
 		return instance;
 	}
 	public void say(){
-		System.out.println("ÎÒÊÇ¶öººÊ½µ¥Àý");
+		System.out.println("ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½");
 	}
 }
 
@@ -36,7 +36,7 @@ class Singleton2{
 		
 	}
 	public void say(){
-		System.out.println("ÎÒÊÇÀÁººÊ½µ¥Àý");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½");
 	}
 	
 	

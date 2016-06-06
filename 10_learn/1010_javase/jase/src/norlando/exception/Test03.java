@@ -1,4 +1,4 @@
-package com.bjsxt.test.exception;
+package norlando.exception;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -14,18 +14,18 @@ public class Test03 {
 			System.out.println("aaa");
 			FileReader fis = new FileReader("d:/ad.txt");   //checked!!!
 			int a = fis.read();		
-			System.out.println("bbb");//先确定返回的值，并不会直接结束运行！
+			System.out.println("bbb");//锟斤拷确锟斤拷锟斤拷锟截碉拷值锟斤拷锟斤拷锟斤拷锟斤拷直锟接斤拷锟斤拷锟斤拷锟叫ｏ拷
 			return "step1";
 		}catch(FileNotFoundException  e){
 			System.out.println("catching!!!!");
 			e.printStackTrace();
-			return "step2";     //先确定返回的值，并不会直接结束运行！
+			return "step2";     //锟斤拷确锟斤拷锟斤拷锟截碉拷值锟斤拷锟斤拷锟斤拷锟斤拷直锟接斤拷锟斤拷锟斤拷锟叫ｏ拷
 		}catch(IOException  e){
 			e.printStackTrace();
 			return "step3";
 		}finally{
 			System.out.println("finally!!!!");
-//			return "fff";    //尽量不要再finally中使用return！
+//			return "fff";    //锟斤拷锟斤拷锟斤拷要锟斤拷finally锟斤拷使锟斤拷return锟斤拷
 		}
 	}
 }

@@ -1,12 +1,12 @@
-package temp.text;
+package test;
 import javax.swing.JOptionPane;
 public class Ex4_11
 {
 	public static void main(String[] args)
 	{
-		String intString=JOptionPane.showInputDialog(null,"ÇëÊäÈëÒ»¸öÕûÊý","Àý4-5ÑÝÊ¾",JOptionPane.QUESTION_MESSAGE);
+		String intString=JOptionPane.showInputDialog(null,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½4-5ï¿½ï¿½Ê¾",JOptionPane.QUESTION_MESSAGE);
 		int n=Integer.parseInt(intString);
-		JOptionPane.showMessageDialog(null,"FibonacciÐòÁÐµÚ"+n+"ÏîÎª£º"+f(n),"Àý4.11Êä³ö",JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null,"Fibonacciï¿½ï¿½ï¿½Ðµï¿½"+n+"ï¿½ï¿½Îªï¿½ï¿½"+f(n),"ï¿½ï¿½4.11ï¿½ï¿½ï¿½",JOptionPane.INFORMATION_MESSAGE);
 		System.exit(0);
 	}
 	public static long f(long n)

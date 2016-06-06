@@ -1,4 +1,4 @@
-package com.bjsxt.test.exception;
+package norlando.exception;
 
 public class Student {
 	private int id;

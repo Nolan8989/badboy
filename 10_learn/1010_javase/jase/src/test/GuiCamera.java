@@ -1,4 +1,4 @@
-package temp.text;
+package test;
 
 import java.awt.Dimension; 
 import java.awt.Rectangle; 
@@ -10,7 +10,7 @@ import java.io.File;
 import javax.imageio.ImageIO; 
  
 /******************************************************************* 
- * 该JavaBean可以直接在其他Java应用程序中调用，实现屏幕的"拍照" 
+ * 锟斤拷JavaBean锟斤拷锟斤拷直锟斤拷锟斤拷锟斤拷锟斤拷Java应锟矫筹拷锟斤拷锟叫碉拷锟矫ｏ拷实锟斤拷锟斤拷幕锟斤拷"锟斤拷锟斤拷" 
  * This JavaBean is used to snapshot the GUI in a  
  * Java application! You can embeded 
  * it in to your java application source code, and us 
@@ -23,15 +23,15 @@ import javax.imageio.ImageIO;
  
 public class GuiCamera 
 {   
-    private String fileName; //文件的前缀 
+    private String fileName; //锟侥硷拷锟斤拷前缀 
     private String defaultName = "GuiCamera"; 
     static int serialNum=0; 
-    private String imageFormat; //图像文件的格式 
+    private String imageFormat; //图锟斤拷锟侥硷拷锟侥革拷式 
     private String defaultImageFormat="png"; 
     Dimension d = Toolkit.getDefaultToolkit().getScreenSize(); 
  
     /**************************************************************** 
-     * 默认的文件前缀为GuiCamera，文件格式为PNG格式 
+     * 默锟较碉拷锟侥硷拷前缀为GuiCamera锟斤拷锟侥硷拷锟斤拷式为PNG锟斤拷式 
      * The default construct will use the default  
      * Image file surname "GuiCamera",  
      * and default image format "png" 
@@ -46,7 +46,7 @@ public class GuiCamera
      * @param s the surname of the snapshot file 
      * @param format the format of the  image file,  
      * it can be "jpg" or "png" 
-     * 本构造支持JPG和PNG文件的存储 
+     * 锟斤拷锟斤拷锟斤拷支锟斤拷JPG锟斤拷PNG锟侥硷拷锟侥存储 
      ****************************************************************/ 
     public GuiCamera(String s,String format) { 
      
@@ -55,21 +55,21 @@ public class GuiCamera
     } 
      
     /**************************************************************** 
-     * 对屏幕进行拍照 
+     * 锟斤拷锟斤拷幕锟斤拷锟斤拷锟斤拷锟斤拷 
      * snapShot the Gui once 
      ****************************************************************/ 
     public void snapShot() { 
      
       try { 
-      //拷贝屏幕到一个BufferedImage对象screenshot 
+      //锟斤拷锟斤拷锟斤拷幕锟斤拷一锟斤拷BufferedImage锟斤拷锟斤拷screenshot 
         BufferedImage screenshot = (new Robot()).createScreenCapture(new 
             Rectangle(0, 0, (int) d.getWidth(), (int) d.getHeight())); 
         serialNum++; 
-        //根据文件前缀变量和文件格式变量，自动生成文件名 
+        //锟斤拷锟斤拷锟侥硷拷前缀锟斤拷锟斤拷锟斤拷锟侥硷拷锟斤拷式锟斤拷锟斤拷锟斤拷锟皆讹拷锟斤拷锟斤拷锟侥硷拷锟斤拷 
         String name=fileName+String.valueOf(serialNum)+"."+imageFormat; 
         File f = new File(name); 
         System.out.print("Save File "+name); 
-      //将screenshot对象写入图像文件 
+      //锟斤拷screenshot锟斤拷锟斤拷写锟斤拷图锟斤拷锟侥硷拷 
         ImageIO.write(screenshot, imageFormat, f); 
         System.out.print("..Finished!\n"); 
       } 

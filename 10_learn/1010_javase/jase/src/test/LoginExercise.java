@@ -1,7 +1,7 @@
-package temp.text;
+package test;
 import java.util.*;
 /**
- * µÇÂ½ÑéÖ¤Á·Ï°¡£
+ * ï¿½ï¿½Â½ï¿½ï¿½Ö¤ï¿½ï¿½Ï°ï¿½ï¿½
  * @author Administrator
  *
  */
@@ -18,28 +18,28 @@ public class LoginExercise
     	b=0;
       try{  
         do{
-			System.out.println("ÊäÈëÑ§ºÅ");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½");
 			//Scanner stdin = new Scanner(System.in);
 			int num=stdin.nextInt();
 			//b=2; 
 			if (num==20120208){
-				System.out.println("ÊäÈëÃÜÂë");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 				int stukey=stdin.nextInt();
 				if(stukey==20120208){
-				  System.out.println("µÇÂ½³É¹¦£¡");
+				  System.out.println("ï¿½ï¿½Â½ï¿½É¹ï¿½ï¿½ï¿½");
 				  a=0;
 				}else{
-				  System.out.println("ÃÜÂë´íÎó");
+				  System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 				  //a=1;
 				}
 			}else{
-			   System.out.println("Ñ§ºÅ´íÎó");
+			   System.out.println("Ñ§ï¿½Å´ï¿½ï¿½ï¿½");
 			   a=1;
 			}
         }
        while(a==1);
        }catch(Exception e){
-        System.out.println("Ñ§ºÅ»òÃÜÂëÓ¦ÎªÊı×Ö");
+        System.out.println("Ñ§ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦Îªï¿½ï¿½ï¿½ï¿½");
         b=1;
         stdin.nextLine();
 		}

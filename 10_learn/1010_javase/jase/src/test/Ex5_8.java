@@ -1,4 +1,4 @@
-package temp.text;
+package test;
 import java.math.BigInteger;
 import java.util.ArrayList;
 public class Ex5_8
@@ -16,7 +16,7 @@ public class Ex5_8
 	    for(int i=alist.size();i<x;i++)//==for(int i=1;i<x,i++)
 	    {
 	    	BigInteger lastfact=(BigInteger)alist.get(i-1);
-	    	BigInteger nextfact=lastfact.multiply(BigInteger.valueOf(i));//multiplyÎªIntegerÇó³Ë»ýµÄ·½·¨
+	    	BigInteger nextfact=lastfact.multiply(BigInteger.valueOf(i));//multiplyÎªIntegerï¿½ï¿½Ë»ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
 	    	alist.add(nextfact);
 	    }
 	    return alist;

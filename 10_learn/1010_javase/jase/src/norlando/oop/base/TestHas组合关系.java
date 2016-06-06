@@ -1,11 +1,11 @@
 package norlando.oop.base;
 
 /*
- * Ê¹ÓÃ×éºÏ¹ØÏµ±íÊ¾¹·ºÍ¶¯Îï
- * ÎÊÌâ£º1.Èç¹û²»ÊÇÔÚdogÀàÀïÃænew Animal2¶ÔÏó£¬ÔõÃ´°ÑAnimal2 ´«¸ødog£¿
- * 		´ğ£ºÓÃdog´ø²ÎÊıDog£¨Animal2 animal)µÄ¹¹Ôì·½·¨,°ÑNew³öÀ´µÄ¶ÔÏó´«¸øanimal;
+ * Ê¹ï¿½ï¿½ï¿½ï¿½Ï¹ï¿½Ïµï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½â£º1.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½dogï¿½ï¿½ï¿½ï¿½ï¿½ï¿½new Animal2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½Animal2 ï¿½ï¿½ï¿½ï¿½dogï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½dogï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Dogï¿½ï¿½Animal2 animal)ï¿½Ä¹ï¿½ï¿½ì·½ï¿½ï¿½,ï¿½ï¿½Newï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ó´«¸ï¿½animal;
  */
-public class TestHas×éºÏ¹ØÏµ {
+public class TestHasç»„åˆå…³ç³» {
 
 	public static void main(String[] args) {
 // 		TODO Auto-generated method stub
@@ -27,11 +27,11 @@ class Animal3 {
 	String ear;
 	
 	public void breath(){
-		System.out.println("ºôÎü£¡");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}	
 	
 	public void run(){
-		System.out.println("¶¯ÎïÔÚÅÜ£¡");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½");
 	}
 	
 

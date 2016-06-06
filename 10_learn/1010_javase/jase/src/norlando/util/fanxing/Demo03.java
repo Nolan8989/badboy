@@ -1,11 +1,11 @@
-package norlando.util.·ºÐÍ;
+package norlando.util.fanxing;
 
 import java.io.Closeable;
 import java.io.IOException;
 
 /**
- * ·ºÐÍ·½·¨
- * ´«½øÀ´µÄ²ÎÊý²»¶¨µÄÊ±ºò£¬ÐèÒª¶¨Òå·ºÐÍÊ¾Àý£º
+ * ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½å·ºï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
  * @author Administrator
  *
  */
@@ -24,8 +24,8 @@ public class Demo03 {
 		}
 	}
 	*/
-	//·ºÐÍ·½·¨
-	//<T extends Closeable>´«½øÀ´µÄ²ÎÊýÉè¶¨µÄ·ºÐÍ
+	//ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½
+	//<T extends Closeable>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½è¶¨ï¿½Ä·ï¿½ï¿½ï¿½
 	public static <T extends Closeable>  void closeAll(T... io){
 		for(Closeable temp:io){
 				try {

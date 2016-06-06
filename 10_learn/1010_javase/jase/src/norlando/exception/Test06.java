@@ -1,4 +1,4 @@
-package com.bjsxt.test.exception;
+package norlando.exception;
 
 public class Test06 {
 	public static void main(String[] args) {

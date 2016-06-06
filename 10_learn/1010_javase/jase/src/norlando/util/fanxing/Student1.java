@@ -1,8 +1,8 @@
-package norlando.util.·ºÐÍ;
+package norlando.util.fanxing;
 /**
- * Ê¹ÓÃObject ·¢Éú¶àÌ¬
- * 1¡¢ÊÖ¶¯ÀàÐÍ¼ì²é
- * 2¡¢ÊÖ¶¯Ç¿ÖÆ×ª»»
+ * Ê¹ï¿½ï¿½Object ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬
+ * 1ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+ * 2ï¿½ï¿½ï¿½Ö¶ï¿½Ç¿ï¿½ï¿½×ªï¿½ï¿½
  * @author Administrator
  *
  */
@@ -43,15 +43,15 @@ public class Student1 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Student1 stu =new Student1();
-		//´æ·Å ×Ö·û´® 
-		stu.setJavasScore("ÓÅÐã");
+		//ï¿½ï¿½ï¿½ ï¿½Ö·ï¿½ï¿½ï¿½ 
+		stu.setJavasScore("ï¿½ï¿½ï¿½ï¿½");
 		stu.setOracleScore(90);
 		
-		//»ñÈ¡¶ÔÓ¦µÄÖµ  1¡¢ÊÖ¶¯Ç¿ÖÆÀàÐÍ×ª»»
+		//ï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½ï¿½Öµ  1ï¿½ï¿½ï¿½Ö¶ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 		Integer oracleScore = (Integer)stu.getOracleScore();
-		//»ñÈ¡¶ÔÓ¦µÄÖµ  ClassCastException 2¡¢ÊÖ¶¯µÄÀàÐÍ¼ì²é
+		//ï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½ï¿½Öµ  ClassCastException 2ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
 		if(stu.getJavasScore() instanceof Integer){
 			Integer javaScore =(Integer) stu.getJavasScore();
 		}

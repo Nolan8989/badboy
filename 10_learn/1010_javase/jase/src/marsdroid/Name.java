@@ -1,4 +1,4 @@
-package org.marsdroid;
+package marsdroid;
 
 
 public class  Name implements Comparable {

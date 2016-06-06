@@ -3,11 +3,11 @@ package norlando.oop.base;
 
 
 /**
- * ²âÊÔÄÚ´æ·ÖÎö
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½
  * @author Administrator
  *
  */
-public class TestÄÚ´æ·ÖÎö {
+public class Testå†…å­˜åˆ†æ {
 	
 	static int a = 10;
 	
@@ -15,20 +15,20 @@ public class TestÄÚ´æ·ÖÎö {
 		
 //		int hang = 1+(int)(Math.random()*8);
 //		int lie = 1+(int)(Math.random()*8);
-//		System.out.println("ĞĞ£º"+hang+"ÁĞ£º"+lie);
+//		System.out.println("ï¿½Ğ£ï¿½"+hang+"ï¿½Ğ£ï¿½"+lie);
 		
 		
 		Teacher t = new Teacher();
 		t.id=300;
-		t.name="ÀÏ¸ß";
+		t.name="ï¿½Ï¸ï¿½";
 		t.sayHello();
 		
 		Computer c = new Computer();
-		c.brand = "ÍâĞÇÈË";
+		c.brand = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 		
 		t.com = c;
 		
-		t.com.brand="µØÇòÈË";
+		t.com.brand="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 		System.out.println(c.brand); 
 		
 		
@@ -38,9 +38,9 @@ public class TestÄÚ´æ·ÖÎö {
 
 /*
 	1. java Test2
-	2. JVM»á´ÓclasspathÖĞÑ°ÕÒTest2.class£¬²¢ÇÒ½øĞĞ¼ÓÔØ£¬¼ÓÔØµ½·½·¨ÇøÖĞ¡£
-	3. ¿ªÊ¼Ñ°ÕÒmainÈë¿Ú¡£
-	4. ¼ÓÔØTeacherÀà
+	2. JVMï¿½ï¿½ï¿½classpathï¿½ï¿½Ñ°ï¿½ï¿½Test2.classï¿½ï¿½ï¿½ï¿½ï¿½Ò½ï¿½ï¿½Ğ¼ï¿½ï¿½Ø£ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½
+	3. ï¿½ï¿½Ê¼Ñ°ï¿½ï¿½mainï¿½ï¿½Ú¡ï¿½
+	4. ï¿½ï¿½ï¿½ï¿½Teacherï¿½ï¿½
 	
 
 */

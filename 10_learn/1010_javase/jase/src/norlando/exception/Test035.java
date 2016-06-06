@@ -1,4 +1,4 @@
-package com.bjsxt.test.exception;
+package norlando.exception;
 
 import java.io.FileReader;
 
@@ -12,7 +12,7 @@ public class Test035 {
 		}
 	}
 	
-	String openFile() throws Exception {  //ÎÒ×Ô¼º²»´¦ÀíÒì³££¬Ë­µ÷ÓÃÎÒË­´¦Àí£¡
+	String openFile() throws Exception {  //ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½Ë­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë­ï¿½ï¿½ï¿½ï¿½
 		System.out.println("Test035.openFile()");
 		FileReader fr = new FileReader("");
 		return "";

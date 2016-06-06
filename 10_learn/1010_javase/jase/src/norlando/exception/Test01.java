@@ -1,7 +1,7 @@
-package com.bjsxt.test.exception;
+package norlando.exception;
 
 /**
- * ²âÊÔRuntimeException
+ * ï¿½ï¿½ï¿½ï¿½RuntimeException
  * @author Administrator
  *
  */
@@ -11,7 +11,7 @@ public class Test01 {
 		
 		Student stu = null;
 		if(stu!=null){
-			stu.getName();   //¿ÕÖ¸ÕëÒì³££¬¾ÍÊÇ£º¶ÔÏóÊÇnull£¬ÎÒÃÇµ÷ÓÃÁË¶ÔÏóµÄ·½·¨»òÊôĞÔ£¡
+			stu.getName();   //ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½nullï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½
 		}
 		
 //		Integer a = Integer.parseInt("abc");

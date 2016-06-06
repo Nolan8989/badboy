@@ -1,10 +1,10 @@
-package norlando.util.·ºÐÍ;
+package norlando.util.fanxing;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ·ºÐÍÃ»ÓÐ¶àÌ¬£¬¶àÌ¬¶¼ÊÇÔËÐÐÆÚÐÐÎª£¬²»ÄÜinstanceof¼ì²é
+ * ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¶ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½instanceofï¿½ï¿½ï¿½
  * @author Administrator
  *
  */
@@ -14,15 +14,15 @@ public class Demo02 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Object obj ="abc"; //¶àÌ¬
+		Object obj ="abc"; //ï¿½ï¿½Ì¬
 		
-		//·ºÐÍ Ã»ÓÐ¶àÌ¬
+		//ï¿½ï¿½ï¿½ï¿½ Ã»ï¿½Ð¶ï¿½Ì¬
 		/*
-		Student3<Object> stu =new Student3<String>();		//´í
-		test3(new ArrayList<String>());						//´í
+		Student3<Object> stu =new Student3<String>();		//ï¿½ï¿½
+		test3(new ArrayList<String>());						//ï¿½ï¿½
 		*/
 	}
-	//Ã»ÓÐ¶àÌ¬
+	//Ã»ï¿½Ð¶ï¿½Ì¬
 	public static void test3(List<Object> obj){
 			
 	}
@@ -30,11 +30,11 @@ public class Demo02 {
 	
 	
 	
-	//ÐÎ²ÎÊ¹ÓÃ¶àÌ¬
+	//ï¿½Î²ï¿½Ê¹ï¿½Ã¶ï¿½Ì¬
 	public static void test1(Object obj){
 		
 	}
-	//·µ»ØÀàÐÍÊ¹ÓÃ¶àÌ¬
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¶ï¿½Ì¬
 	public static Object test2(String car){
 		return "adf";
 	}

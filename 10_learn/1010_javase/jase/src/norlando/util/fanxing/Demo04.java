@@ -1,6 +1,6 @@
-package norlando.util.·ºĞÍ;
+package norlando.util.fanxing;
 /**
- * ·ºĞÍµÄÇ¶Ì×:Ê¹ÓÃÊ±Ç¶Ì×
+ * ï¿½ï¿½ï¿½Íµï¿½Ç¶ï¿½ï¿½:Ê¹ï¿½ï¿½Ê±Ç¶ï¿½ï¿½
  * @author Administrator
  *
  */
@@ -10,13 +10,13 @@ public class Demo04 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//´ÓÀïµ½ÍâÉèÖÃ
-		String score ="ÓÅĞã";
+		//ï¿½ï¿½ï¿½ïµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		String score ="ï¿½ï¿½ï¿½ï¿½";
 		Student3<String> stu =new Student3<String>();
 		stu.setHtmlScore(score);
 		Bjsxt<Student3<String>> room =new Bjsxt<Student3<String>>();
 		room.setStu(stu);		
-		//´ÓÍâµ½Àï·ÃÎÊ
+		//ï¿½ï¿½ï¿½âµ½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Student3<String> stu2 =room.getStu();
 		String score2=stu2.getHtmlScore();
 	}

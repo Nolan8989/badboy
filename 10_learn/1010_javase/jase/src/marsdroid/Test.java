@@ -1,4 +1,4 @@
-package org.marsdroid;
+package marsdroid;
 
 import java.io.File;
 import java.io.FileInputStream;

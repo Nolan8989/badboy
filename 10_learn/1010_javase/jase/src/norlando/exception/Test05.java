@@ -1,4 +1,4 @@
-package com.bjsxt.test.exception;
+package norlando.exception;
 
 public class Test05 {
 	public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Test05 {
 	
 	public void test01(int index){
 		if(index<0){
-//			throw new IndexOutOfBoundsException();  //IndexOutofBoundsException()ÊÇRuntimeExceptionµÄ×ÓÀà£¬ËùÒÔ²»ÐèÒªtrycatch£¡
+//			throw new IndexOutOfBoundsException();  //IndexOutofBoundsException()ï¿½ï¿½RuntimeExceptionï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½Òªtrycatchï¿½ï¿½
 			try {
 				throw new Exception();
 			} catch (Exception e) {

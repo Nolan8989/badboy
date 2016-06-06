@@ -1,4 +1,4 @@
-package temp.text;
+package test;
 
 import java.awt.*;
 import java.awt.image.*;
@@ -8,11 +8,11 @@ import com.sun.image.codec.jpeg.*;
  
 public class WaterMark {
 /**
-  * ¸øÍ¼Æ¬Ìí¼ÓË®Ó¡
-* @param filePath ÐèÒªÌí¼ÓË®Ó¡µÄÍ¼Æ¬µÄÂ·¾¶
-* @param markContent Ë®Ó¡µÄÎÄ×Ö
-* @param markContentColor Ë®Ó¡ÎÄ×ÖµÄÑÕÉ«
-* @param qualNum Í¼Æ¬ÖÊÁ¿
+  * ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Ë®Ó¡
+* @param filePath ï¿½ï¿½Òªï¿½ï¿½ï¿½Ë®Ó¡ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Â·ï¿½ï¿½
+* @param markContent Ë®Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+* @param markContentColor Ë®Ó¡ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½É«
+* @param qualNum Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
 * @return
 */
 public boolean createMark(String filePath,String markContent,Color markContentColor,float qualNum) { 
@@ -25,7 +25,7 @@ public boolean createMark(String filePath,String markContent,Color markContentCo
 	g.setColor(markContentColor); 
 	g.setBackground(Color.white); 
 	g.drawImage(theImg, 0, 0, null ); 
-	g.drawString(markContent,width/5,height/5); //Ìí¼ÓÎÄ×Ö 
+	g.drawString(markContent,width/5,height/5); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 	g.dispose(); 
 	try{ 
 		FileOutputStream out=new FileOutputStream(filePath); 
