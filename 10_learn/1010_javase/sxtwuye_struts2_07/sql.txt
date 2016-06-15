@@ -1,0 +1,55 @@
+select (
+case
+when degree=1 then '高中以下'
+when degree=2 then '高中'
+when degree=3 then '大专'
+when degree=4 then '本科'
+when degree=5 then '硕士'
+when degree=6 then '博士'
+else  '博士以上'
+end
+)lable,degree, count(degree) dnum
+from t_resident
+where build_id=1 group by degree
+
+
+select  ifnull(tab01.dnum,0) dnum ,td.id,td.dname
+from 
+(select degree,count(degree) dnum from t_resident where build_id=2 group by degree)tab01
+right join t_degree td on  tab01.degree=td.id
+
+
+
+
+select   if(degree>5,'tttt','oooooo') from t_resident
+
+
+
+
+
+
+
+
+
+ select (
+case
+when age between 1 and 10 then '1-10'
+when age between 11 and 20 then '11-20'
+when age between 21 and 30 then '21-30'
+when age between 31 and 40 then '31-40'
+when age between 41 and 50 then '41-50'
+when age between 51 and 60 then '51-60'
+else '61以上'
+end
+)tage,count(age) anum from t_resident group by tage 
+
+
+
+select ifnull(tagetab.anum,0) agenum ,ta.id aid,ta.agepart agepart from  
+(select (case  when age between 1 and 10 then '1-10'
+when age between 11 and 20 then '11-20'
+when age between 21 and 30 then '21-30'
+when age between 31 and 40 then '31-40'
+when age between 41 and 50 then '41-50'
+when age between 51 and 60 then '51-60'  else '61以上'   end
+)tage,count(age) anum from t_resident group by tage )tagetab  right join  t_agepart  ta  on tagetab.tage=ta.agepart

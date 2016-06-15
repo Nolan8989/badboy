@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="sxtwuye02">
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="java-output-path" value="/sxtwuye02/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/sxtwuye05_struts"/>
+    </wb-module>
+</project-modules>

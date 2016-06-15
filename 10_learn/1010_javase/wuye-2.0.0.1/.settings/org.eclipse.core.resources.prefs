@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//sql/t_build.sql=UTF-8
+encoding//sql/t_resident.sql=UTF-8
+encoding//sql/t_room.sql=UTF-8
+encoding//sql/t_unit.sql=UTF-8
+encoding//src/norlando/service/impl/AnalysisDataServiceImpl.java=UTF-8
+encoding//src/norlando/util/ChartsXml.java=UTF-8

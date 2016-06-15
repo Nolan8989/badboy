@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+    <!-- struts.action.extension=action,, -->
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <constant name="struts.action.extension" value="sxt,,"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+    
+    <!-- 定义一个拦截器 -->
+    <interceptors>
+    	<interceptor name="myinter01" class="com.bjsxt.interceptor.MyInterceptor01"></interceptor>
+    </interceptors>
+    
+    
+      	<action name="test01" class="com.bjsxt.action.TestActoin">
+      		<result>/test.jsp</result>
+      		<!-- 
+	      		<interceptor-ref name="myinter01"></interceptor-ref>
+	      		<interceptor-ref name="defaultStack"></interceptor-ref>
+	      		 <interceptor-ref name="timer"></interceptor-ref>
+      		 -->
+      		 <result name="invalid.token">error.jsp</result>
+      		 <interceptor-ref name="token"></interceptor-ref>
+      	</action>
+    </package>
+    
+    
+    
+
+    <!-- Add packages here -->
+
+</struts>

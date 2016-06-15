@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+	<class name="norlando.po.User" table="t_user">
+		<id name="id">
+			<generator class="native"></generator><!-- 使用数据库自身的 -->
+		</id>
+		<property name="name" column="name"></property>
+		<property name="password" column="password"></property>
+		<property name="role" column="role"></property>
+		<property name="phone"></property>
+	</class>
+</hibernate-mapping>

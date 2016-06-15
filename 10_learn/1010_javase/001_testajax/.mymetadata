@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="001_testajax"
+  id="myeclipse.1379832293551"
+  context-root="/001_testajax"
+  j2ee-spec="6.0"
+  archive="001_testajax.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

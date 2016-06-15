@@ -1,0 +1,6 @@
+com.bjsxt.action
+com.bjsxt.dao
+com.bjsxt.dao.impl
+com.bjsxt.po
+com.bjsxt.test
+com.bjsxt.util

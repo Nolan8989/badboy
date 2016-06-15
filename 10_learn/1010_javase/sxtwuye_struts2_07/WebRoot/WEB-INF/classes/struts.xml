@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <constant name="struts.action.extension" value="sxt,,"></constant>
+    <constant name="struts.multipart.maxSize" value="209715200"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+     	<action name="selectRoom" class="com.bjsxt.action.SelectRoomAction">
+     		<result name="build" type="stream">
+     			<param name="contentType">${contentType}</param>
+      			<param name="inputName">inputStreamBuild</param>
+      			<param name="bufferSize">8192</param>
+     		</result>
+     		<result name="unit" type="stream">
+     			<param name="contentType">${contentType}</param>
+      			<param name="inputName">inputStreamBuild</param>
+      			<param name="bufferSize">8192</param>
+     		</result>
+     		<result name="room" type="stream">
+     			<param name="contentType">${contentType}</param>
+      			<param name="inputName">inputStreamBuild</param>
+      			<param name="bufferSize">8192</param>
+     		</result>
+     	</action>
+     
+     
+     <action name="resident" class="com.bjsxt.action.ResidentAction">
+     	<param name="srcImageDir">E:/testdir/imagedir/</param>
+     	<param name="srcPrevImageDir">E:/testdir/previmage/</param>
+     	<result name="add_ok">/resident/addresident.jsp</result>
+     	
+     	<result name="list_rsd" >/resident/gfindrsd.jsp</result>
+     	<result name="show_rsd" >/resident/show_rsd.jsp</result>
+     </action>
+     
+     
+     <action name="showImage" class="com.bjsxt.action.ReadImageAction">
+     	<result name="show" type="stream">
+     			<param name="contentType">application/x-msdownload</param>
+      			<param name="inputName">imageStream</param>
+      			<param name="bufferSize">8192</param>
+     	</result>
+     </action>
+    </package>
+    
+    
+    
+
+    <!-- Add packages here -->
+
+</struts>

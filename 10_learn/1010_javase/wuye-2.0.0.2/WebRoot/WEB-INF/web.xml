@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ 
+	
+<filter>
+	<filter-name>encodefilter</filter-name>
+	<filter-class>com.bjsxt.filter.EncodeFilter</filter-class>
+</filter>
+
+<filter-mapping>
+	<filter-name>encodefilter</filter-name>
+	<url-pattern>*.action</url-pattern>
+	<url-pattern>*.jsp</url-pattern>
+</filter-mapping>
+
+<filter>
+	<filter-name>loginfilter</filter-name>
+	<filter-class>com.bjsxt.filter.LoginFilter</filter-class>
+</filter>
+
+<filter-mapping>
+	<filter-name>loginfilter</filter-name>
+	<url-pattern>*.action</url-pattern>
+	<url-pattern>*.jsp</url-pattern>
+</filter-mapping>
+ 
+
+
+<filter>
+	<filter-name>tokenfilter</filter-name>
+	<filter-class>com.bjsxt.filter.TokenFilter</filter-class>
+</filter>
+
+<filter-mapping>
+	<filter-name>tokenfilter</filter-name>
+	<url-pattern>*.action</url-pattern>
+	<url-pattern>*.jsp</url-pattern>
+</filter-mapping>
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.bjsxt.action.LoginServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExitServlet</servlet-name>
+    <servlet-class>com.bjsxt.action.ExitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResidentServlet</servlet-name>
+    <servlet-class>com.bjsxt.action.ResidentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AnalysisServlet</servlet-name>
+    <servlet-class>com.bjsxt.action.AnalysisServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAdrrServlet</servlet-name>
+    <servlet-class>com.bjsxt.action.FindAdrrServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/exitServlet.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResidentServlet</servlet-name>
+    <url-pattern>/residentServlet.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AnalysisServlet</servlet-name>
+    <url-pattern>/analysisServlet.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAdrrServlet</servlet-name>
+    <url-pattern>/findAdrrServlet.action</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectRoomServlet</servlet-name>
+    <servlet-class>com.bjsxt.action.SelectRoomServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SelectRoomServlet</servlet-name>
+    <url-pattern>/selectRoomServlet.action</url-pattern>
+  </servlet-mapping>
+
+<!--     <filter> -->
+<!--         <filter-name>struts2</filter-name> -->
+<!--         <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class> -->
+<!--     </filter> -->
+
+<!--     <filter-mapping> -->
+<!--         <filter-name>struts2</filter-name> -->
+<!--         <url-pattern>/*</url-pattern> -->
+<!--     </filter-mapping> -->
+
+ <jsp-config>
+ 	<taglib>
+	 	<taglib-uri>sxtc</taglib-uri>
+ 		<taglib-location>/WEB-INF/c.tld</taglib-location>
+ 	</taglib>
+ 
+ </jsp-config>
+ 
+ 
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

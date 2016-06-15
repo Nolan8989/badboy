@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+<form action="rsdServlet.action" method="post" enctype="application/x-www-form-urlencoded" name="rsdform">
+<table width="90%" border="1" style="border-collapse:collapse"   bordercolor="#00FF99">
+  <tr>
+    <td width="20%"><div align="right">住户名：</div></td>
+    <td width="80%"><input name="rsdname" type="text" /></td>
+  </tr>
+  <tr>
+    <td><div align="right">性别：</div></td>
+    <td><label>
+        <input type="radio" checked="checked" value="1" name="gender" id="gender_0" />
+        男</label>
+      <label>
+        <input type="radio" name="gender"  value="0" id="gender_1" />
+        女</label>
+  </tr>
+  <tr>
+    <td><div align="right">年龄：</div></td>
+    <td><input name="age" type="text" /></td>
+  </tr>
+  <tr>
+    <td><div align="right">身份证号：</div></td>
+    <td><input name="identity" type="text" /></td>
+  </tr>
+  <tr>
+    <td><div align="right">学历：</div></td>
+    <td><select name="degree"  >
+        <option value="1">高中以下</option>
+        <option  value="2">高中</option>
+        <option value="3">大专</option>
+        <option value="4">本科</option>
+        <option value="5">硕士</option>
+        <option value="6">博士</option>
+        <option value="7">博士以上</option>
+
+      </select></td>
+  </tr>
+  <tr>
+    <td><div align="right">手机号：</div></td>
+    <td>
+    <input name="phone" type="text" />
+    </td>
+  </tr>
+  <tr>
+    <td><div align="right">邮箱：</div></td>
+    <td>
+    <input name="email" type="text" />
+    </td>
+  </tr>
+  <tr>
+    <td><div align="right">所租房子：</div></td>
+    <td>
+    <select name="build_id">
+    	<option>请选择楼栋</option>
+    </select>
+        <select name="unit_id">
+    	<option>请选择单元</option>
+    </select>
+        <select name="room_id">
+    	<option>请选择房间</option>
+    </select>
+    
+    </td>
+  </tr>
+  <tr>
+    <td><div align="right">合同有效期：</div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="right">住户照片：</div></td>
+    <td>
+    <input name="rsdimg" type="file" />
+    
+    </td>
+  </tr>
+  <tr>
+    <td><div align="right">
+        <input name="" type="submit" value="添加住户" />
+      </div></td>
+    <td>
+    <input name="" type="reset" value="重置" />
+    
+    </td>
+  </tr>
+</table>
+
+</form>
+</body>
+</html>
