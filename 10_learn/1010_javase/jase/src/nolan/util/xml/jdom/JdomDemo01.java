@@ -1,4 +1,4 @@
-package norlando.xml.jdom;
+package nolan.util.xml.jdom;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
