@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloWorld {
 
 	/**
-	 * 1. Ê¹ÓÃ @RequestMapping ×¢½âÀ´Ó³ÉäÇëÇóµÄ URL
-	 * 2. ·µ»ØÖµ»áÍ¨¹ıÊÓÍ¼½âÎöÆ÷½âÎöÎªÊµ¼ÊµÄÎïÀíÊÓÍ¼, ¶ÔÓÚ InternalResourceViewResolver ÊÓÍ¼½âÎöÆ÷, »á×öÈçÏÂµÄ½âÎö:
-	 * Í¨¹ı prefix + returnVal + ºó×º ÕâÑùµÄ·½Ê½µÃµ½Êµ¼ÊµÄÎïÀíÊÓÍ¼, È»»á×ö×ª·¢²Ù×÷
+	 * 1. ä½¿ç”¨ @RequestMapping æ³¨è§£æ¥æ˜ å°„è¯·æ±‚çš„ URL
+	 * 2. è¿”å›å€¼ä¼šé€šè¿‡è§†å›¾è§£æå™¨è§£æä¸ºå®é™…çš„ç‰©ç†è§†å›¾, å¯¹äº InternalResourceViewResolver è§†å›¾è§£æå™¨, ä¼šåšå¦‚ä¸‹çš„è§£æ:
+	 * é€šè¿‡ prefix + returnVal + åç¼€ è¿™æ ·çš„æ–¹å¼å¾—åˆ°å®é™…çš„ç‰©ç†è§†å›¾, ç„¶ä¼šåšè½¬å‘æ“ä½œ
 	 * 
 	 * /WEB-INF/views/success.jsp
 	 * 

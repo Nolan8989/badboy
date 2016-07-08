@@ -1,8 +1,11 @@
 ﻿package nolan.refelct.base;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 
 public class TestRefelct {
 /**
@@ -49,7 +52,7 @@ public class TestRefelct {
 		
 		
 		//	Field类：代表类的成员变量。
-/*
+
 		Field[] fs = c.getDeclaredFields();
 //		System.out.println(c.getDeclaredField("username"));
 		for (Field f :fs){
@@ -57,7 +60,7 @@ public class TestRefelct {
 			System.out.println(f.getName());
 			System.out.println(f.getType()); //返回的类型是class<?>
 		}
-*/
+
 
 		
 		
