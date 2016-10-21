@@ -1,0 +1,115 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+	
+
+	/*var decimalDigits = 2,
+            tax = 5;
+
+        function add(x, y) {
+            return x + y;
+        }
+
+        function subtract(x, y) {
+            return x - y;
+        }*/
+
+       /* var Calculator = function (decimalDigits, tax) {
+            this.decimalDigits = decimalDigits;
+            this.tax = tax;
+        };
+
+
+        Calculator.prototype = funcation(){//通过Calculator对象的prototype属性赋对象字面量来设定Calculator对象的原型
+            add =function (x, y) {
+                return x + y;
+            },
+
+            subtract =function (x, y) {
+                return x - y;
+            }
+        };*/
+
+        //分步声明：
+		var BaseCalculator = function () {
+		    //为每个实例都声明一个小数位数
+		    this.decimalDigits = 2;
+		};
+		        
+		//使用原型给BaseCalculator扩展2个对象方法
+		BaseCalculator.prototype.add = function (x, y) {
+		    return x + y;
+		};
+
+		BaseCalculator.prototype.subtract = function (x, y) {
+		    return x - y;
+		};
+
+
+		var Calculator = function(){
+			this.tax = 5;
+		}
+
+		//Calculator.prototype = new BaseCalculator();
+		Calculator.prototype =  BaseCalculator.prototype;
+
+		//Calculator 重写BaseCalculator add方法
+		Calculator.prototype.add = function(x,y){
+
+			return x+y+this.tax;
+		};
+
+        window.onload = function(){
+
+        //	var  ca = new Calculator();
+        //	alert(ca.add(1,2));
+        //	alert(ca.decimalDigits);
+        //	console.info(ca);
+
+
+        }
+
+
+
+        //hasOwnProperty
+
+        var foo = {
+        	hasOwnProperty : function(){
+        		return false;
+        	},
+
+        	bar : 'Here be dargons'
+
+        };
+
+
+         window.onload = function(){
+
+        //	var  ca = new Calculator();
+        //	alert(ca.add(1,2));
+        //	alert(ca.decimalDigits);
+        //	console.info(ca);
+        	console.info(foo.hasOwnProperty('bar'));
+
+        //	{}.hasOwnProperty.call(foo,'bar');
+        //	var obj = new Ojbect();
+        var Orgin = function(){ };
+        var o = new Orgin();
+        	console.info(o.hasOwnProperty.call(foo, 'bar'));
+        
+
+        }
+
+
+</script>
+
+
+<title>Start...</title>
+</head>
+<!-- <body background="Start\background.bmp> -->
+<body>
+</body>
+</html>
+
+

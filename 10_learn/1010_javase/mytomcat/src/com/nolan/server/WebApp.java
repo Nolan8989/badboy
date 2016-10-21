@@ -24,7 +24,7 @@ public class WebApp {
 
 	
 	
-	private  static String WEB_ROOT="D:\\share\\javaProjects\\servletWorkspace\\lss03\\WebRoot\\";
+	private  static String WEB_ROOT="E:\\share\\javaProjects\\servletWorkspace\\lss03\\WebRoot\\";
 	
 	private ServletContext servletContext;
 	//key表示 urlPattern ， value 表示 ServletMapping;
@@ -39,6 +39,7 @@ public class WebApp {
 	public static WebApp getWebApp(){
 		if(webApp == null){
 			webApp = new WebApp();
+			webApp.parseWebXml();
 		}
 		
 		return webApp;
