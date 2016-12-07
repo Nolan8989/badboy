@@ -124,7 +124,66 @@ for (var i = 0; i < elems.length; i++) {
     })(i), 'false');
 
 }
+//----------------------------------------------------------part 4--------------------------------------
+// 这是一个自执行的函数，函数内部执行自身，递归
+function foo() { foo(); }
 
+// 这是一个自执行的匿名函数，因为没有标示名称
+// 必须使用arguments.callee属性来执行自己
+var foo = function () { arguments.callee(); };
+
+// 这可能也是一个自执行的匿名函数，仅仅是foo标示名称引用它自身
+// 如果你将foo改变成其它的，你将得到一个used-to-self-execute匿名函数
+var foo = function () { foo(); };
+
+// 有些人叫这个是自执行的匿名函数（即便它不是），因为它没有调用自身，它只是立即执行而已。
+(function () { /* code */ } ());
+
+// 为函数表达式添加一个标示名称，可以方便Debug
+// 但一定命名了，这个函数就不再是匿名的了
+(function foo() { /* code */ } ());
+
+// 立即调用的函数表达式（IIFE）也可以自执行，不过可能不常用罢了
+//(function () { arguments.callee(); } ());
+//(function foo() { foo(); } ());
+
+
+// 另外，下面的代码在黑莓5里执行会出错，因为在一个命名的函数表达式里，他的名称是undefined
+// 呵呵，奇怪
+//(function foo() { foo(); } ());
+
+
+//--------------------------------------------------part 5------------------------------------------------
+
+// 创建一个立即调用的匿名函数表达式
+// return一个变量，其中这个变量里包含你要暴露的东西
+// 返回的这个变量将赋值给counter，而不是外面声明的function自身
+
+var counter = (function () {
+    var i = 0;
+
+    return {
+        get: function () {
+            return i;
+        },
+        set: function (val) {
+            i = val;
+        },
+        increment: function () {
+            return ++i;
+        }
+    };
+} ());
+
+// counter是一个带有多个属性的对象，上面的代码对于属性的体现其实是方法
+
+counter.get(); // 0
+counter.set(3);
+counter.increment(); // 4
+counter.increment(); // 5
+
+counter.i; // undefined 因为i不是返回对象的属性
+i; // 引用错误: i 没有定义（因为i只存在于闭包）
 </script>
 <title>Immediately-invoked</title>
 </head>
